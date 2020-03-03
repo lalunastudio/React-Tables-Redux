@@ -36,7 +36,7 @@ export function register(config) {
 
       if (isLocalhost) {
         // This is running on localhost. Let's check if a service worker still exists or not.
-        checkValidServiceWorker(swUrl, config);
+        checkValidServiceWorker(swUrl, config); // eslint-disable-line
 
         // Add some additional logging to localhost, pointing developers to the
         // service worker/PWA documentation.
@@ -48,7 +48,7 @@ export function register(config) {
         });
       } else {
         // Is not localhost. Just register service worker
-        registerValidSW(swUrl, config);
+        registerValidSW(swUrl, config); // eslint-disable-line
       }
     });
   }
@@ -101,7 +101,7 @@ function registerValidSW(swUrl, config) {
 function checkValidServiceWorker(swUrl, config) {
   // Check if the service worker can be found. If it can't reload the page.
   fetch(swUrl, {
-    headers: { 'Service-Worker': 'script' }
+    headers: { 'Service-Worker': 'script' },
   })
     .then(response => {
       // Ensure service worker exists, and that we really are getting a JS file.

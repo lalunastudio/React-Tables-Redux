@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import data from './data.json';
-import { toggleAll, toggleRow, initTable } from './actions';
+import data from '../data/netflix.json';
+import { toggleAll, toggleRow, initTable } from '../actions';
 
 const UNIQUE_KEY = 'show_id';
 

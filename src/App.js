@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import Table from './Table';
+import Table from './components/Table';
 import rootReducer from './reducers/table';
 
 const store = createStore(rootReducer);
